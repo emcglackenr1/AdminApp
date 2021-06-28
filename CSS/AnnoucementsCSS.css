@@ -1,0 +1,412 @@
+/* Styling applying to 1024px and smaller, barring what is mentioned specifically in the responsive to 
+mobile screens section */
+
+header {
+
+    grid-area: header;
+    background-color: white;
+    text-align: center;
+    text-decoration-color: black;
+    font-size: 120%;
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 1fr 5fr 1fr;
+    grid-template-columns: 1fr 10fr 1fr;
+    grid-template-areas: 
+      "header header header"
+      "aside main aside1"
+      "aside footer aside1";
+    grid-gap: 0;
+    height: 100%;
+}
+
+table {
+    text-align: left;
+    vertical-align: bottom;
+    border-collapse: collapse;
+    width: 100%;
+    padding: 0%;
+    }
+
+table h2, h4 {
+    
+    font-weight: bolder;
+    border: transparent;
+}
+
+
+
+tr, td {
+    border-width: 4%;
+    border-style: none;
+    margin: 10%;
+    text-align: left;
+    column-width: fit-content;
+}
+
+
+.SubMenuResp     /* Dissapears on larger displays */
+{
+  display:none;
+}
+
+
+.main {
+    grid-area: main;
+    background-color: none;
+    height: 100%;
+}
+
+img { 
+    width: auto;
+    }
+
+.headingbox {
+    padding: 1% 1% 1% 5%;
+    font-size: 100%;
+    text-align-last: left;
+
+  }
+
+
+  .headingboxselected {
+    padding: 1% 1% 1% 5%;
+    font-size: 100%;
+    text-align-last: center;
+  }
+
+  .headingboxC { /* Same as above but no centered text */
+    padding: 1% 1% 1% 5%;
+    font-size: 100%;
+    text-align: center;
+  }
+
+.card {
+    /* Added shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 100%;
+    height: fit-content;
+  }
+
+  .cardselected {
+    /* Added shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 100%;
+    height: fit-content;
+    background-color: white;
+    border-style: inset;
+    border-color: grey;
+    border-width: 2%;
+  }
+
+  .cardL {
+    /* Has an L at the end because this one is left aligned */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 100%;
+    height: fit-content;
+  }
+
+  .cardselectedL {
+    /* Has an L at the end because this one is left aligned */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 100%;
+    height: fit-content;
+    background-color: white;
+    border-style: inset;
+    border-color: grey;
+    border-width: 2%;
+  }
+
+
+  .card2 {
+    /* Same as above but no shadow */
+    width: 100%;
+    height: fit-content;
+    border-color: black;
+  }
+
+.cardbody {
+  border: .05px solid white;
+  border-radius: 5px 5px 0 0;
+  border-collapse: collapse;
+  width: fit-content;
+  height: fit-content;
+  padding: 5% 10%;
+  text-align: center;
+}
+
+.cardbodyN {
+    /* Same as above but with a grey border, left aligned text and less padding, for text boxes rather than button-like features */
+    border: .05px solid grey;
+    border-radius: 5px 5px 0 0;
+    border-collapse: collapse;
+    width: fit-content;
+    height: fit-content;
+    padding: 5%;
+    text-align: left;
+  }
+
+
+/* On hover add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+
+
+.aside{  /* Created to centre the content viewpoint for the user 
+  while designing I made the background orange to define it easier */
+    grid-area: aside;
+    background-color: darkgrey;
+}
+
+.aside1{ /* Created to centre the content viewpoint for the user 
+  while designing I made the background red to define it easier */
+    grid-area: aside1;
+    background-color: darkgrey;
+}
+
+footer{ /* Useful to have for layout, but also a client might want to utilise it, so best to have it there 
+  just in case, while designing I made the background lightgreen to define it easier*/
+    grid-area: footer;
+    background-color: none;
+    border: black;
+    border-style: thin;
+    height: 100%;
+}
+
+.form {
+  width: 100%;
+}
+
+.form input {
+width: 80%;
+float: center;
+}
+
+.form label {
+  display: block;
+}
+
+#textbody {
+  width: 90%;
+  float: center;
+}
+
+#submit {
+  width: 40%;
+}
+
+/* ++++++++++++++++++++++++++              Hidden RESPONSIVE MENU              ++++++++++++++++++++++++++  */      
+
+.responsivemenu {
+  display: none; /* Hide for larger screens */
+  grid-area: header;
+}
+/* ++++++++++++++++++++++++++              Hidden RESPONSIVE MENU              ++++++++++++++++++++++++++    */    
+
+
+/* Float columns side by side */
+.column1 {
+  float: left;
+  padding: 2%;
+}
+
+.column2 {
+    float: left;
+    padding: 2%;
+  }
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  padding: 5%;
+}
+
+/* float after the columns */
+.row:after {
+  padding: 2%;
+}
+
+@media screen and (max-width: 375px) {
+
+  header{
+    grid-area: header;
+    text-align: center;
+    text-decoration-color: white;
+    font-size: 100%; /* This seemed sufficient for smaller screens, rather than the original 120% */
+}
+
+    .container {
+      display: grid;
+      grid-template-rows: .1fr 2fr .1fr;
+      grid-template-columns: .1fr 1fr .1fr;
+      grid-template-areas: 
+        "aside header aside1" /* Aside was extended up to center the navbars in the header */
+        "aside main aside1"
+        "footer footer footer";
+      grid-gap: 0;
+  }
+
+
+  .row {
+    display: grid;
+    grid-template-columns: 1fr;
+
+  }
+
+
+
+  img { 
+    width: auto;
+    height: auto;
+    }
+
+    .cardbody {
+        border: .05px solid white;
+        border-radius: 5px 5px 0 0;
+        border-collapse: collapse;
+        width: 90%;
+        height: 90%;
+        padding: 5%;
+        text-align: center;
+      }
+
+
+      /* Responsive columns 50rem max 
+
+             ++++++++++++++++++++++++++
+            
+++++++++++++++++++++++++++              DROPDOWN RESPONSIVE MENU              ++++++++++++++++++++++++++        
+Trying to make a responsive dropdown menu for using this page on mobile
+
+
+/*show for small screens */
+@media screen and (max-width: 375px) {  /* Were it not for EMA specifications I may have used: max-width: 50rem */
+  .responsivemenu {
+       display: block;
+       grid-area: header;
+   }
+
+.main {
+  display:flex;
+}
+
+}
+.navmain { /*hide for small screens */
+  display: none;
+}
+     
+.SubMenuFullScreen { /*hide for small screens */
+  display: none;
+}
+
+
+/*show for small screens, based on CSS for .navUL */
+.ResponsiveNavUL {
+  width: 100%;
+  height: fit-content;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  font-size: large;
+  display: block;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  background-color: grey;
+}
+
+.Respnav-button {
+  /* Similar to '.nav-button' in other stylesheets */
+  float: center;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  width: 35%;
+  padding-left: 10%;
+  padding-right: 5%;
+  padding-bottom: 2%;
+  background-color: grey;
+  border-color: black;
+}
+
+.Respnav-active {
+  /* Similar to '.nav-active' in other stylesheets */
+  float: center;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  width: fit-content;
+  padding-left: 10%;
+  padding-right: 5%;
+  padding-bottom: 2%;
+  background-color: white;
+  border-color: black;
+}
+
+.SubMenuResp { /* Leftside SubMenu */
+  display: block;
+  grid-area: auto;
+  width:fit-content;
+}
+
+.card {
+  /* Added shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: fit-content;
+  height: fit-content;
+  font-size: 80%;
+}
+
+.cardselected {
+  /* Added shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: fit-content;
+  height: fit-content;
+  background-color: white;
+  border-color: grey;
+  border-width: 2%;
+  font-size: 100%;
+}
+
+tr {
+  border-width: 4%;
+  border-style: none;
+  margin: 0;
+  text-align: left;
+  column-width: fit-content;
+}
+
+td {
+  width: 100%;
+}
+
+.headingboxOther
+{ padding: 10%;
+  indent: 5%; 
+  font-stretch: inherit;
+  overflow: hidden;
+ }
+
+.form input {
+  width: 80%;
+  float: center;
+  }
+  
+#textbody {
+  width: 80%;
+  float: center;
+}
+
+}
+
+
+
+
+
