@@ -1,0 +1,172 @@
+<html lang="en"><head>
+    <meta charset="utf-8">
+    
+    <!-- this scales the content to display nicely on mobiles/tablets -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <title>Project Wireframe - Homepage User</title>
+
+    <link rel="stylesheet" href="./css/CalendarAdmin1.css">
+    <link rel="stylesheet" href="./css/navbars.css">
+  </head>
+
+
+<div class="container"> <!-- contains the whole page === -->
+
+    <header>
+    <h1> Title of Site </h1>
+    <nav class="navmain">
+    <ul class="navUL">
+        <li class="nav-button"> <a href="./ColourAdminHomepage.html">Home</a></li>
+        <li class="nav-active"> <a href="./ListAdmin.html">Events</a></li>
+        <li class="nav-button"> <a href="./Membership.html">Membership</a></li>
+        <li class="nav-button"> <a href="./NewsAdmin.html">News</a></li>        
+    </ul>
+    </nav>
+
+        <div class="navcal"> <!-- calendar specific navbar === -->
+            <ul class="navUL">
+                <li class="cal-li"> <a href="./ListAdmin.html">List</a></li><!-- If this was a fully functioning site then depending on the status of the 
+                  event selected, it would affect the list link  === -->
+                <li class="cal-li"> <a href="#">Week</a></li> <!-- If this was a real link it would read <a href="./WeekAdmin.html">Week</a></li> === -->
+                <li class="cal-li-Active"> <a href="#">Month</a></li> <!-- If this was a real link it would read <a href="./MonthAdmin.html">Month</a></li> === -->
+                <li class="cal-li"> <a href="#">Year</a></li> <!-- If this was a real link it would read <a href="./YearAdmin.html">Year</a></li> === -->
+
+            </ul>
+        </div>
+    
+    </header>
+
+
+    <main>
+    <body>
+      <!-- ==== ==== -->
+
+    <div class="row">
+            <!-- ..................column1.......................... -->
+
+          <div class="column1"><!-- 3 start of individual squares -->
+            <div class="card"> <!-- 4  -->
+                    <div class="headingbox"><!-- 5 -->
+                      <h3>All Club Events</h3>
+                    </div><!-- 5 -->
+            </div><!-- 4 -->
+            <div class="cardselected"> <!-- 4  -->
+                <div class="headingboxselected"><!-- 5 -->
+                  <h3>Approved</h3>
+                </div><!-- 5 -->
+            </div><!-- 4 -->
+            <div class="card"> <!-- 4  -->
+              <div class="headingboxselected"><!-- 5 -->
+                <h3>Proposed</h3>
+              </div><!-- 5 -->
+          </div><!-- 4 -->
+          <div class="card"> <!-- 4  -->
+            <div class="headingboxselected"><!-- 5 -->
+              <h3>Rejected</h3>
+            </div><!-- 5 -->
+        </div><!-- 4 -->
+
+          </div> <!-- 3 end of column --> 
+    <!-- ............................................--> 
+          
+
+    <div class="column2"><!-- 3 start of individual squares for events-->
+                <!-- Event summary start -->
+
+        <div class="card"> <!-- outer border -->
+            
+
+                        <div class="headingboxC">
+                        <h1>Events</h1>
+                        </div>
+            
+
+
+            <div class="cardbody"> <!-- Start of individual event -->
+                <!-- Tableused here because easier for screenreaders--> 
+                <p><h2>Watcombe to Sheldon</h2></p>
+                            <table>
+
+                                        <tr>
+                                        <td><h4>Start:</h4></td>
+                                        <td>01/01/2021</td>
+                                        </tr>
+                                            <!-- Name/Heading End--> 
+
+                                            <!-- Data start--> 
+                                
+                                    <tr>
+                                   
+                                        <td><h4>Start:</h4></td>
+                                        <td>10:30am</td>
+                                    
+                                    </tr>
+                                        <!-- Data end--> 
+
+                                        <!-- data start--> 
+                                    <tr>
+                                            <td><h4>Meeting Point: </h4></td>
+                                            <td><p>Watcombe Car Park</p></td>
+                                            
+                                    </tr>
+                                        <!-- data end--> 
+
+                                        <label for="EventStatus">Status:</label>
+
+                                        <select name="EventStatus">
+                                          <option value="Approved">Approved</option>
+                                          <option value="proposed">Proposed</option>
+                                          <option value="Rejected">Rejected</option>
+                                        </select> 
+                                        <!-- This dropdown is for illustrative purposes. It does not change where the event is currently shown but it would in a finished version--> 
+                                        
+                                        <!-- Larger section start--> 
+                                        <tr colspan="2">
+                                        <td><h4>Notes:</h4></td>
+                                        <td>
+                                        
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing 
+                                                        elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam... 
+                                                        <a href="EventMoreDetail.html">read more</a></p>
+                                        </td>
+
+                                
+                                         <!-- Larger section end--> 
+                                    
+                                            
+                                        <!-- ........................--> 
+                                        <!-- Commented out because not relevant to user version of page
+                                        <tr>
+                                        <th><h4>Status:</h4></th>
+                                        <td>Active</td>
+                                        </tr> 5 -->
+                                        <!-- ........................--> 
+
+                                  
+                                        </table>  <!-- table --> 
+            </div><!-- Card -->
+
+
+
+    </div><!-- ROW -->
+
+      <!-- ==== END link grid ==== -->
+    </body>
+    </main>
+
+
+    <aside class="aside">
+    </aside>
+    <aside class="aside1">
+    </aside>
+
+    <footer>
+      <!-- empty but kept just in case === -->
+
+    </footer>
+
+</div> <!-- contains the whole page === -->
+
+</html>

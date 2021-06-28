@@ -1,0 +1,215 @@
+<html lang="en"><head>
+    <meta charset="utf-8">
+    
+    <!-- this scales the content to display nicely on mobiles/tablets -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <title>Project Wireframe - Membership </title>
+
+    <link rel="stylesheet" href="./css/CalendarAdmin1.css">
+    <link rel="stylesheet" href="./css/navbars.css">
+  </head>
+
+
+<div class="container"> <!-- contains the whole page === -->
+
+    <header>
+    <h1> Ou Walking Club </h1>
+    <h2>Admin App</h2>
+    <div class="subnav1">
+    <a href=./ColourLogInAdmin.html><button> Log Out</button></a>
+    <input type="text" placeholder="  Search App..."></div>
+    <nav class="navmain">
+    <ul class="navUL">
+        <li class="nav-button"> <a href="./ColourAdminHomepage.html">Home</a></li>
+        <li class="nav-button"> <a href="./Announcements.html">Announcements</a></li> 
+        <li class="nav-button"> <a href="./ListAdmin.html">Events</a></li>
+        <li class="nav-active"> <a href="./Membership.html">Membership</a></li>
+        <li class="nav-button"> <a href="./NewsAdmin.html">News</a></li>        
+    </ul>
+    </nav>
+
+    
+    </header>
+
+
+    <main>
+    <body>
+      <!-- ==== ==== -->
+
+
+
+
+    <div class="row">
+            <!-- ..................column1.......................... -->
+<div class="column1"><!-- 3 start of individual squares -->
+
+            <a href="MembershipReq.html">
+                <div class="card"> <!-- 4  -->
+                  <div class="headingbox"><!-- 5 -->
+                    <h3>Membership Requests</h3>
+                  </div><!-- 5 --></a>
+              </div><!-- 4 -->
+      <br>
+              <a href="ActivityReview.html">
+                  <div class="cardselected"> <!-- 4  -->
+                    <div class="headingbox"><!-- 5 -->
+                      <h3>Status Review</h3>
+                    </div><!-- 5 --></a>
+                  </div><!-- 4 -->
+<br>
+
+            <a href="Membership.html">
+            <div class="card"> <!-- 4  -->
+                    <div class="headingbox"><!-- 5 -->
+                      <h3>All Members</h3>
+                    </div><!-- 5 --></a>
+      
+            </div><!-- 4 --><h2>View Only:</h2>
+            <a href="ActiveOnly.html">
+            <div class="card"> <!-- 4  -->
+                <div class="headingbox"><!-- 5 -->
+                  <h3>Active</h3>
+                </div><!-- 5 --></a>
+            </div><!-- 4 -->
+
+
+            <a href="InActiveOnly.html">
+            <div class="card"> <!-- 4  -->
+              <div class="headingbox"><!-- 5 -->
+                <h3>InActive</h3>
+              </div><!-- 5 --></a>
+            </div><!-- 4 -->
+
+          </div> <!-- 3 end of column --> 
+    <!-- ............................................--> 
+          
+
+    <div class="column2"><!-- 3 start of individual squares for events-->
+                <!-- Event summary start -->
+
+
+                  <div class="subnavLeft"><input type="text" placeholder="Search Members...">   </div> 
+
+
+        <div class="card"> <!-- outer border -->             
+                 
+          <div class="headingboxC">
+            
+            <h1>Status Review:</h1>
+
+            <p>Members who have been inactive for over 24 months should be marked as inactive.</p>
+ 
+            </div>         
+
+
+
+            <!-- Event Example 1--> 
+            <div class="card"> <!-- Start of individual event -->
+                <!-- Tableused here because easier for screenreaders-->
+                  <!-- This dropdown is for illustrative purposes. It does not change where the event is currently shown but it would in a finished version--> 
+                
+                 
+                </div>
+
+
+                <div class="column2"><!-- 3 start of individual squares -->
+                    <div class="card"> <!-- 4  -->
+                         
+                            <div class="cardbody"><!-- 6 start of news preview list --> 
+    
+                                    <div class="cardbodyN"><!-- 7 News Items --> 
+
+                                        <h2>John Brown</h2></td>
+                                        <table>
+                                        <tr>
+                                        <td><b>Last Active:</b> Within 2 Months</td>
+                                        <td>
+                                          <label for="EventStatus">Change Status:</label>
+                                          <select name="EventStatus">
+                                            <option value="proposed">InActive</option>
+                                            <option value="Approved">Active</option>
+                                            
+                                        </td>
+                                        </tr>
+                                        </table>
+                                        <br>
+                                        <table>
+                                        <tr>
+                                        <td><b>Email:</b> Doe.J@email.com</td>
+                                        </tr>
+                                        <tr>
+                                        <td><b>Password:</b> 12345</td><!-- This should only be visible to certain admin --> 
+                                        </tr>
+                                        <tr>
+                                        <td><b>Consented to Emails:</b> Yes</td></tr>
+                                        </table>
+                                        <p><b>Notes:</b></p> 
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                                          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.                                   
+                                             </p>
+                                             <input type="submit" value="Confirm Status">
+                                            </div><!-- 7 News Items --> 
+                                             
+                                            <div class="cardbodyN"><!-- 7 News Items --> 
+
+                                              <h2>John Brown</h2></td>
+                                              <table>
+                                              <tr>
+                                              <td><b>Last Active:</b> Over 24 Months</td>
+                                              <td>
+                                                <label for="EventStatus">Change Status:</label>
+                                                <select name="EventStatus">
+                                                  <option value="Approved">Active</option>
+                                                  <option value="proposed">InActive</option>
+                                              </td>
+                                              </tr>
+                                              </table>
+                                              <br>
+                                              <table>
+                                              <tr>
+                                              <td><b>Email:</b> Brown.J@email.com</td>
+                                              </tr>
+                                              <tr>
+                                              <td><b>Password:</b> 12345</td><!-- This should only be visible to certain admin --> 
+                                              </tr>
+                                              <tr>
+                                              <td><b>Consented to Emails:</b> Yes</td></tr>
+                                              </table>
+                                              <p><b>Notes:</b></p> 
+                                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.                                   
+                                                   </p>
+                                                   <input type="submit" value="Confirm Status">
+                                                  </div><!-- 7 News Items --> 
+                                         
+                            </div><!-- 6 start of news preview list --> 
+                    </div><!-- 4 -->
+                  </div> <!-- 3 -->
+    
+
+        
+            </div><!-- Card -->
+
+
+    </div><!-- ROW -->
+
+      <!-- ==== END link grid ==== -->
+    </body>
+    </main>
+
+
+    <aside class="aside">
+    </aside>
+    <aside class="aside1">
+    </aside>
+
+    <footer>
+      <!-- empty but kept just in case === -->
+
+    </footer>
+
+</div> <!-- contains the whole page === -->
+
+</html>
